@@ -11,6 +11,6 @@ public class DropwizardExampleApplication extends Application<Configuration> {
   @Override
   public void run(Configuration configuration, Environment environment) {
     environment.jersey().register(new Resource());
-    environment.jersey().register(new CustomerService());
+    //environment.jersey().register(new CustomerService());
   }
 }
