@@ -18,7 +18,7 @@ public class AccountService {
   @GET
   @Path("/get")
   public String getAccount(){
-    return "Account Number: 001";
+    return "Account Number: 002";
   }
 
 }

@@ -1,3 +1,4 @@
+import com.training.service.AccountRelationService;
 import com.training.service.CustomerService;
 import com.training.service.AccountService;
 import io.dropwizard.Application;
@@ -14,5 +15,6 @@ public class DropwizardExampleApplication extends Application<Configuration> {
     environment.jersey().register(new Resource());
     environment.jersey().register(new CustomerService());
     environment.jersey().register(new AccountService());
+    environment.jersey().register(new AccountRelationService());
   }
 }
